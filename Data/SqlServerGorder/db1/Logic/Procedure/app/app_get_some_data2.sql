@@ -3,5 +3,5 @@ create or alter procedure app.app_get_some_data2
 as
 set nocount on;
 
-select 'get_some_data' get_some_data
+select 'get_some_data' get_some_data, 'made an alteration in another database' get_some_data
 go
