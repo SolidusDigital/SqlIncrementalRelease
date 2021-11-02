@@ -68,7 +68,7 @@ class Builder:
         self.git_build_target_branch_name = self.git_build_target_branch_name
         self.target_deployment_environment = self.target_deployment_environment
 
-        # self._git_refresh_branches()
+        self._git_refresh_branches()
 
         self._build_sub_dir(self.manifest_output_path)
         self._build_sub_dir(self.build_output_path)
@@ -312,7 +312,7 @@ class Builder:
 if __name__ == '__main__':
     error_code, result, build_files = Builder().build_deployment(
         target_deployment_environment='prod',
-        git_build_target_branch_name='prod',
+        git_build_target_branch_name='main',
         git_build_source_branch_name='dev',
         post_deployment_file_name='post_deployment.sql')
 
