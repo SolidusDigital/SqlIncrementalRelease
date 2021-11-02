@@ -12,8 +12,8 @@ How it works.
  3. It also provides a summary of sources in the manifest folder. 
  
 *** 
-##how to use 
-### changes
+## How to use 
+### Changes
 place your DDL changes in _structure directory. 
 
 This mechanism is best suited for forward only DDL changes. 
@@ -24,7 +24,7 @@ This may be acceptable to you but generally this would be messy.
 Any changes to outside of _structure directory will be placed into the 02_logic.sql file
 except any changes to post_deployment.sql those will be placed into the 03_post_deployment.sql file
 
-###Build & Deploy Project 
+### Build & Deploy Project 
 1. run build_deployment.py
 1. review Data/SqlServerGorder/manifest
 1. deploy Data/SqlServerGorder/output/*
